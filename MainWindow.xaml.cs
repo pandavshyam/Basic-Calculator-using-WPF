@@ -66,7 +66,7 @@ namespace Calculator
             else if (input.Text == "+" || input.Text == "-" || input.Text == "*" || input.Text == "/")
             {
                 MessageBox.Show("Not Allowed", "Warning");
-                input.Text = "0";
+                ResetExpressionAndInput();
             }
             else
             {
